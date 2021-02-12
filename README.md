@@ -7,4 +7,4 @@ Example of first commit
 hello my name     Dercio
 ola  v vamos ver 
 
-oque acontece 
+oque acontece .mjn 
