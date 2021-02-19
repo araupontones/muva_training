@@ -3,7 +3,7 @@ Repositary to train the MUVA team on R
 
 This project aims to train Dercio on how to be an excellent data scientist.
 
-Nosso plao do trabalho e o siguiente:
+Nosso plano do trabalho e o siguiente:
 
 1) Github: Comprender push, pull, commit, etc
 2) ggplot: fazer graficos relevantes
