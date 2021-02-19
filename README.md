@@ -7,4 +7,6 @@ Example of first commit
 hello my name     Dercio
 ola  v vamos ver 
 
-oque acontece .mjn 
+oque acontece .mjn
+
+Esse comentario é do dia 19 de fevereiro 
