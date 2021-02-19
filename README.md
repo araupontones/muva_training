@@ -13,4 +13,4 @@ Nosso plano do trabalho e o siguiente:
 6) ficar contentes!
 
  
-O objetivo final do este projecto es que tudes seamos expertos en datos.
+O objetivo final desse projecto é que todos sejamos esperientes em R.
