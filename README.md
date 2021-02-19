@@ -3,10 +3,14 @@ Repositary to train the MUVA team on R
 
 This project aims to train Dercio on how to be an excellent data scientist.
 
-Example of first commit
-hello my name     Dercio
-ola  v vamos ver 
+Nosso plao do trabalho e o siguiente:
 
-oque acontece .mjn
+1) Github: Comprender push, pull, commit, etc
+2) ggplot: facer graficos relevantes
+3) organizacao do pastas para projecto MIS
+4) limpeza do base do datos MIS
+5) criar un dashboard en shiny 
+6) ficar contentos!
 
-Esse comentario é do dia 19 de fevereiro   
+
+
