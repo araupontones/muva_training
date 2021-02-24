@@ -16,4 +16,4 @@ Nosso plano do trabalho e o seguiente:
 O objetivo final desse projecto é que todos sejamos esperientes em R.
 
 
-Meu nome é Anavera e este é o meu primeiro comentário.
+Meu nome é Anavera e este é o meu primeiro comentário....
