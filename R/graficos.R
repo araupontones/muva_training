@@ -9,7 +9,7 @@
         #####grey = "#cccccc"
         ## Para criar mapas usaremos o pacote ggplot2
 
-library(tidyverse)
+library(tidyverse)  
 library(pacman) 
 tidyverse_update()  # instalando actualizações do pacote tidyverse
 
