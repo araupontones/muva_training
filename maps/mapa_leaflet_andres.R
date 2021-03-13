@@ -17,20 +17,25 @@ susamati_points_raw = import(file.path(dir_data_maps, "Cópia de Susamati.xlsx")
 susamati_points = susamati_points_raw %>% 
   select(nome,bairro, Longitude, Latitude, tipo_latrina) %>%
   filter(tipo_latrina != ".a") %>%
-  mutate(tipo_latrina = str_remove(tipo_latrina," ligad[a-z] a um buraco no chão" )) %>%
   filter(!nome %in% c("PEDRO FELIZARDA", "PINTO JOSINE", "ALFREDO ANTÓNIO",
                       "FERNANDO GUAMBE", "FATIMA JOÃO BOA", "FERNANDO LOPES")) %>%
   mutate(tipo_latrina = factor(tipo_latrina))
-
+# %>%
+#mutate(tipo_latrina = str_remove(tipo_latrina," ligad[a-z] a um buraco no chão" ))
 str(susamati_points)
 
 
 unique(susamati_points$tipo_latrina)
 
 
-pal <- colorFactor(
-  palette = c('white', 'black', 'green', 'purple', 'orange', "gray", "red", "yellow"),
-  domain = susamati_points$tipo_latrina
+######Cores do MUVA
+#####agua_MUVA = "#5DD4C7"
+#####purple_MUVA = "#9D57D2"
+#####orange_MUVA = "#F77333"
+#####darkblue = "#1F2136"
+#####grey = "#cccccc"
+pal <- colorFactor(c("#5DD4C7", "#F77333", 'green', "maroon", 'orange', "black", "red", 'purple'),
+ domain = susamati_points$tipo_latrina
 )
 
 susamati_points %>%
@@ -41,9 +46,11 @@ view(susamati_points_raw)
 leaflet(data = susamati_points) %>%
   addTiles() %>%
   leaflet::addCircleMarkers(label = ~tipo_latrina,
-                            radius = 2,
-                            color = ~pal(tipo_latrina))
-  leaflet::addPolylines(data = test)
+                            radius = 3,
+                            color = ~pal(tipo_latrina)) %>%
+  addLegend("topright", pal = pal, values =~tipo_latrina, title = "Tipo de Latrina")
+  
+leaflet::addPolygons(data = test)
 
 
 leaflet() %>%
