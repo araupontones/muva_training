@@ -34,7 +34,7 @@ unique(susamati_points$tipo_latrina)
 #####orange_MUVA = "#F77333"
 #####darkblue = "#1F2136"
 #####grey = "#cccccc"
-pal <- colorFactor(c("#5DD4C7", "#F77333", 'green', "maroon", 'orange', "pink", "red", 'purple'),
+pal <- colorFactor(c("#5DD4C7", "#F77333", 'green', "maroon", 'orange', "black", "red", 'purple'),
  domain = susamati_points$tipo_latrina
 )
 
