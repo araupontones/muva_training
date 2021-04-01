@@ -48,8 +48,8 @@ leaflet(data = susamati_points) %>%
   leaflet::addCircleMarkers(label = ~tipo_latrina,
                             radius = 3,
                             color = ~pal(tipo_latrina)) %>%
-  addLegend("topright", pal = pal, values =~tipo_latrina, title = "Tipo de Latrina")
-  
+  addLegend("topright", pal = pal, values =~tipo_latrina, title = "Tipo de Latrina")%>%
+ 
 leaflet::addPolygons(data = test)
 
 
